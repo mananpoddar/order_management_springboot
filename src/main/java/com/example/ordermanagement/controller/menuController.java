@@ -18,21 +18,14 @@ public class menuController {
 
     // Get all the items in the menu
     @GetMapping("/getMenu")
-    public List<menu> getAllNotes() {
-        System.out.println("get called..");
+    public List<menu> getMenu() {
         return menu.findAll();
     }
 
     //add a new item in the menu
     @PostMapping("/addItem")
     public menu addItem(@RequestBody menu item) {
-        System.out.println(item.getName());
         return menu.save(item);
     }
 
-    // Get a Single Note
-
-    // Update a Note
-
-    // Delete a Note
 }

@@ -13,6 +13,14 @@ public class menu implements Serializable {
     @GeneratedValue
     private int itemId;
 
+    public int getItemId() {
+        return itemId;
+    }
+
+    public void setItemId(int itemId) {
+        this.itemId = itemId;
+    }
+
     private String itemName;
     private int price;
 
